@@ -1,0 +1,218 @@
+/* ===========================================
+   INFINITY CANVAS PRO - RESPONSIVE DESIGN
+   =========================================== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .app-header {
+        padding: 0.5rem 1rem;
+        height: 56px;
+    }
+    
+    .app-title {
+        font-size: 1.1rem;
+    }
+    
+    .properties-panel {
+        width: 240px;
+    }
+    
+    .toolbar {
+        width: 56px;
+    }
+    
+    .toolbar-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .minimap-container {
+        width: 120px;
+        height: 100px;
+        bottom: 0.75rem;
+        right: 0.75rem;
+    }
+}
+
+/* Mobile (480px - 768px) */
+@media (max-width: 768px) {
+    .app-header {
+        padding: 0.5rem 0.75rem;
+        height: 52px;
+    }
+    
+    .app-title {
+        font-size: 1rem;
+    }
+    
+    .logo-icon {
+        font-size: 1.25rem;
+    }
+    
+    .save-indicator {
+        display: none;
+    }
+    
+    /* Hide properties panel on mobile */
+    .properties-panel {
+        display: none;
+    }
+    
+    .main-container {
+        gap: 0;
+    }
+    
+    .toolbar {
+        width: 52px;
+        padding: 0.5rem 0;
+        gap: 0.125rem;
+    }
+    
+    .toolbar-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .toolbar-btn.active::after {
+        right: -8px;
+        height: 20px;
+    }
+    
+    .toolbar-divider {
+        margin: 0.35rem 0;
+    }
+    
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .zoom-level {
+        font-size: 0.7rem;
+        min-width: 32px;
+    }
+    
+    .minimap-container {
+        width: 100px;
+        height: 80px;
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+}
+
+/* Small Mobile (320px - 480px) */
+@media (max-width: 480px) {
+    .app-header {
+        padding: 0.5rem 0.5rem;
+        height: 48px;
+    }
+    
+    .app-title {
+        font-size: 0.95rem;
+    }
+    
+    .logo-icon {
+        font-size: 1.1rem;
+    }
+    
+    .header-right {
+        gap: 0.5rem;
+    }
+    
+    .toolbar {
+        width: 48px;
+        padding: 0.4rem 0;
+    }
+    
+    .toolbar-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .toolbar-group {
+        gap: 0.2rem;
+    }
+    
+    .toolbar-divider {
+        width: 28px;
+        margin: 0.3rem 0;
+    }
+    
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .minimap-container {
+        width: 90px;
+        height: 70px;
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .toolbar-btn {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .btn-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Increase touch target sizes */
+    .resize-handle {
+        width: 12px;
+        height: 12px;
+    }
+    
+    /* Disable hover effects on touch */
+    .toolbar-btn:hover {
+        background: transparent;
+    }
+}
+
+/* High DPI / Retina Display */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .toolbar-btn,
+    .btn-icon {
+        box-shadow: inset 0 0 0 0.5px rgba(0, 0, 0, 0.05);
+    }
+}
+
+/* Dark Mode - Mobile */
+@media (prefers-color-scheme: dark) {
+    [data-theme="light"] {
+        --color-bg: #1E293B;
+        --color-surface: #0F172A;
+    }
+}
+
+/* Landscape Orientation (Mobile) */
+@media (max-height: 600px) and (max-width: 768px) {
+    .app-header {
+        height: 48px;
+    }
+    
+    .minimap-container {
+        width: 80px;
+        height: 60px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .app-header,
+    .toolbar,
+    .properties-panel {
+        display: none;
+    }
+    
+    .canvas-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+}

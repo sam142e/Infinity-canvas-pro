@@ -1,0 +1,163 @@
+/* ===========================================
+   INFINITY CANVAS PRO - CANVAS STYLES
+   =========================================== */
+
+/* Selection Box */
+.selection-box {
+    position: absolute;
+    border: 2px dashed var(--color-primary);
+    background: rgba(37, 99, 235, 0.05);
+    pointer-events: none;
+    z-index: 999;
+}
+
+/* Handle Styles (for resize) */
+.resize-handle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--color-primary);
+    border: 2px solid var(--color-bg);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.resize-handle.nw { cursor: nwse-resize; }
+.resize-handle.n { cursor: ns-resize; }
+.resize-handle.ne { cursor: nesw-resize; }
+.resize-handle.w { cursor: ew-resize; }
+.resize-handle.e { cursor: ew-resize; }
+.resize-handle.sw { cursor: nesw-resize; }
+.resize-handle.s { cursor: ns-resize; }
+.resize-handle.se { cursor: nwse-resize; }
+
+/* Grid Background Pattern */
+.grid-pattern {
+    background-image:
+        linear-gradient(0deg, transparent 24%, var(--color-border) 25%, var(--color-border) 26%, transparent 27%, transparent 74%, var(--color-border) 75%, var(--color-border) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color-border) 25%, var(--color-border) 26%, transparent 27%, transparent 74%, var(--color-border) 75%, var(--color-border) 76%, transparent 77%, transparent);
+    background-size: 40px 40px;
+    background-position: 0 0;
+}
+
+/* Object Outline (selection) */
+.object-outline {
+    border: 2px solid var(--color-primary);
+    box-shadow: inset 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* Transform Indicator */
+.transform-indicator {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 999;
+}
+
+/* Sticky Note Styles */
+.sticky-note-dom {
+    position: absolute;
+    padding: 0.75rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.sticky-note-dom:active {
+    cursor: grabbing;
+}
+
+.sticky-note-dom textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: inherit;
+    resize: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.sticky-note-dom textarea:focus {
+    outline: none;
+}
+
+/* Shape Outline */
+.shape-outline {
+    position: absolute;
+    pointer-events: none;
+    border: 2px solid var(--color-primary);
+}
+
+/* Text Editor */
+.text-editor {
+    position: absolute;
+    min-width: 100px;
+    min-height: 24px;
+    padding: 0.25rem 0.5rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: 1rem;
+    resize: none;
+    z-index: 1000;
+}
+
+.text-editor:focus {
+    outline: none;
+}
+
+/* Animation - Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation - Scale */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease;
+}
+
+.animate-scaleIn {
+    animation: scaleIn 0.3s ease;
+}
+
+/* Loading Spinner */
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,88 @@
+/* ===========================================
+   INFINITY CANVAS PRO - THEME VARIABLES
+   =========================================== */
+
+/* Light Theme (Default) */
+[data-theme="light"] {
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #3B82F6;
+    
+    --color-secondary: #7C3AED;
+    --color-secondary-dark: #6D28D9;
+    --color-secondary-light: #A78BFA;
+    
+    --color-success: #10B981;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+    --color-info: #06B6D4;
+    
+    --color-bg: #FFFFFF;
+    --color-surface: #F8FAFC;
+    --color-surface-secondary: #F1F5F9;
+    
+    --color-text: #0F172A;
+    --color-text-secondary: #64748B;
+    --color-text-tertiary: #94A3B8;
+    
+    --color-border: #E2E8F0;
+    --color-border-light: #F1F5F9;
+    
+    --color-hover: #F1F5F9;
+    --color-active: #E2E8F0;
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --color-primary: #3B82F6;
+    --color-primary-dark: #2563EB;
+    --color-primary-light: #60A5FA;
+    
+    --color-secondary: #A78BFA;
+    --color-secondary-dark: #9333EA;
+    --color-secondary-light: #C4B5FD;
+    
+    --color-success: #10B981;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+    --color-info: #06B6D4;
+    
+    --color-bg: #0F172A;
+    --color-surface: #1E293B;
+    --color-surface-secondary: #334155;
+    
+    --color-text: #F1F5F9;
+    --color-text-secondary: #CBD5E1;
+    --color-text-tertiary: #94A3B8;
+    
+    --color-border: #334155;
+    --color-border-light: #1E293B;
+    
+    --color-hover: #334155;
+    --color-active: #475569;
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+/* Sticky Note Colors */
+.sticky-note-yellow { --note-bg: #FEF3C7; --note-text: #78350F; }
+.sticky-note-pink { --note-bg: #FCE7F3; --note-text: #831843; }
+.sticky-note-blue { --note-bg: #DBEAFE; --note-text: #0C2340; }
+.sticky-note-green { --note-bg: #DCFCE7; --note-text: #14532D; }
+.sticky-note-purple { --note-bg: #F3E8FF; --note-text: #4C1D95; }
+.sticky-note-orange { --note-bg: #FFEDD5; --note-text: #7C2D12; }
+
+[data-theme="dark"] .sticky-note-yellow { --note-bg: #78350F; --note-text: #FEF3C7; }
+[data-theme="dark"] .sticky-note-pink { --note-bg: #831843; --note-text: #FCE7F3; }
+[data-theme="dark"] .sticky-note-blue { --note-bg: #0C2340; --note-text: #DBEAFE; }
+[data-theme="dark"] .sticky-note-green { --note-bg: #14532D; --note-text: #DCFCE7; }
+[data-theme="dark"] .sticky-note-purple { --note-bg: #4C1D95; --note-text: #F3E8FF; }
+[data-theme="dark"] .sticky-note-orange { --note-bg: #7C2D12; --note-text: #FFEDD5; }
